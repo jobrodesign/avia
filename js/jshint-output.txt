@@ -1,6 +1,64 @@
-[JSHint file: C:\Users\jobrodesign\workspace\avia\js\jquery.smart.js]
-  1 Error:
-     34,18: Missing semicolon.
-  2 Warnings:
-      59,1: 'jQuery' is an implied global variable.
-      19,1: 'plugin' is an unused variable.
+[JSHint file: C:\Users\jobrodesign\workspace\avia\js\jquery.listItems.js]
+  47 Errors:
+     24,47: Missing semicolon.
+      25,8: Missing semicolon.
+     38,44: Missing semicolon.
+     41,45: Missing semicolon.
+     45,43: Missing semicolon.
+     49,16: Missing semicolon.
+     59,40: Missing semicolon.
+     62,41: Missing semicolon.
+     66,39: Missing semicolon.
+     69,16: Missing semicolon.
+     76,75: Missing semicolon.
+     78,26: Missing semicolon.
+     80,25: Missing semicolon.
+     81,21: Missing semicolon.
+      82,8: Missing semicolon.
+     86,31: Missing semicolon.
+     93,27: Missing semicolon.
+      95,8: Missing semicolon.
+    101,47: Missing semicolon.
+     102,8: Missing semicolon.
+    115,10: Use '===' to compare with 'true'.
+    166,31: Use '!==' to compare with 'null'.
+    226,36: Use '===' to compare with 'true'.
+    271,10: Missing semicolon.
+    284,34: 'filtered' is already defined.
+    288,34: 'filtered' is already defined.
+    290,17: 'filtered' used out of scope.
+    290,37: 'filtered' used out of scope.
+    291,24: 'filtered' used out of scope.
+     295,3: Mixed spaces and tabs.
+    296,10: Missing semicolon.
+    305,40: 'collection' is already defined.
+    309,44: 'collection' is already defined.
+    311,44: 'collection' is already defined.
+    315,40: 'collection' is already defined.
+    315,80: Expected a 'break' statement before 'case'.
+    317,40: 'collection' is already defined.
+    320,40: 'collection' is already defined.
+    326,52: 'collection' is already defined.
+    329,52: 'collection' is already defined.
+    332,52: 'collection' is already defined.
+    335,52: 'collection' is already defined.
+    338,52: 'collection' is already defined.
+    342,44: 'collection' is already defined.
+    349,32: 'collection' is already defined.
+    356,30: 'collection' used out of scope.
+    357,10: Missing semicolon.
+  14 Warnings:
+   36,57,1: '$' is an implied global variable.
+ 106,351,1: 'itemById' is an implied global variable.
+ 106,305,309,311,315,351,1: 'assignments' is an implied global variable.
+ 112,302,305,1: 'library' is an implied global variable.
+     114,1: 'confirm' is an implied global variable.
+ 116,118,1: 'window' is an implied global variable.
+     167,1: 'imgpath' is an implied global variable.
+ 277,283,287,364,1: 'console' is an implied global variable.
+ 317,320,1: 'messages' is an implied global variable.
+ 326,329,332,335,338,342,1: 'mystatus' is an implied global variable.
+     373,1: 'jQuery' is an implied global variable.
+     130,1: 'clear' is an unused variable.
+     133,1: 'that' is an unused variable.
+     273,1: 'filtered' is an unused variable.

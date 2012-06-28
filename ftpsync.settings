@@ -1,0 +1,33 @@
+{
+	// don't forget about commas
+
+	// your main connection
+	"default": {
+
+		"host": "jobrodesign.com",		// address
+		"port": 21, 					// use 22 for SFTP
+		"username": "jobrodesign1",  	// or null for anonymous login
+		"password": "Jeannine1",	
+		"path": "/dev/avia",			// path to the folder matching the folder in which this file resides
+		//"tls": false,					// true = secured FTP connection
+		//"passive": true,				// set whether the connection will be passive or active
+
+		// true = upload on save, false = upload only manually
+		 "upload_on_save": true
+
+		// "private_key":
+
+		// how long until connection closes [seconds]
+		//"timeout": 30,
+
+		// regular expression, when matches the file path of the file-to-be-uploaded, it cancels its upload
+		//"ignore": "",
+
+		// whether to check 'last updated' of the target file on server
+		//"check_time": true
+
+		// if set to true it will download the file from server on opening, but only if it's newer than the current file
+		//"download_on_open": false
+
+	}
+}

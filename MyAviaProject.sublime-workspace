@@ -20,11 +20,19 @@
 	"buffers":
 	[
 		{
+			"file": "js/jquery.listItems.js",
+			"settings":
+			{
+				"buffer_size": 11310,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 22844,
-				"line_ending": "Unix"
+				"buffer_size": 22840,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -35,8 +43,44 @@
 		"selected_items":
 		[
 			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"git push",
+				"Git: Push Current Branch"
+			],
+			[
 				"git",
-				"Git: Gui"
+				"Git: Commit"
+			],
+			[
+				"git st",
+				"Git: Status"
+			],
+			[
+				"git pu",
+				"Git: Push Current Branch"
+			],
+			[
+				"git qui",
+				"Git: Quick Commit"
+			],
+			[
+				"git ",
+				"Git: Commit"
+			],
+			[
+				"git commit",
+				"Git: Commit"
+			],
+			[
+				"git p",
+				"Git: Push Current Branch"
+			],
+			[
+				"git comm",
+				"Git: Quick Commit"
 			],
 			[
 				"install",
@@ -80,9 +124,12 @@
 	},
 	"file_history":
 	[
+		"/C/Users/jobrodesign/AppData/Roaming/Sublime Text 2/Packages/JsMinifier/Minifier.sublime-settings",
+		"/C/Users/jobrodesign/workspace/avia/js/jquery.listItems.min.js",
+		"/C/Users/jobrodesign/workspace/avia/index.html",
+		"/C/Users/jobrodesign/.ssh/id_rsa.pub",
 		"/C/Users/jobrodesign/workspace/avia/js/jquery.listItems.js",
 		"/C/Users/jobrodesign/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
-		"/C/Users/jobrodesign/workspace/avia/index.html",
 		"/C/Users/jobrodesign/workspace/avia/js/jquery.smart.js",
 		"/C/Users/jobrodesign/workspace/avia/js/jshint-output.txt",
 		"/C/Users/Josh/Desktop/jquerymobile.js",
@@ -145,23 +192,50 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "index.html",
+					"file": "js/jquery.listItems.js",
 					"settings":
 					{
-						"buffer_size": 22844,
+						"buffer_size": 11310,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2220,
-								2220
+								6879,
+								6879
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 2970.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 22840,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2306,
+								2306
 							]
 						],
 						"settings":
@@ -170,7 +244,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 585.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -215,7 +289,7 @@
 	},
 	"output.git":
 	{
-		"height": 100.0
+		"height": 146.0
 	},
 	"replace":
 	{

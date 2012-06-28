@@ -311,6 +311,8 @@ $.fn.listItems = function(options){
 							var collection = assignments.assignments;
 						}
 						break;
+					case 'optional':
+						var collection = optionalItems(assignments.assignments);
 					case 'announcements':
 						var collection = messages.announcements;
 						break;
@@ -332,6 +334,9 @@ $.fn.listItems = function(options){
 								case 'skillprofiles':
 									var collection = mystatus.skillprofiles;
 									break;
+								case 'scorm':
+									var collection = mystatus.scorm;
+									break;
 							}
 						} else {
 							var collection = mystatus.items;
@@ -346,12 +351,7 @@ $.fn.listItems = function(options){
 					var temp = itemById(assignments.assignments, this.id);
 					collection.push(temp);
 				});
-			}
-			if(settings.optional == true){
-				var collection = optionalItems(assignments.assignments);
-			}
-			
-			
+			}			
 			
 			filter(settings, collection);
 		}
