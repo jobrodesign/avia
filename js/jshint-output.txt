@@ -1,0 +1,6 @@
+[JSHint file: C:\Users\jobrodesign\workspace\avia\js\jquery.smart.js]
+  1 Error:
+     34,18: Missing semicolon.
+  2 Warnings:
+      59,1: 'jQuery' is an implied global variable.
+      19,1: 'plugin' is an unused variable.

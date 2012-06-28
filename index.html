@@ -1,0 +1,637 @@
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ///////////////////////////////////////////////////////////////////////////////////////// #BEGIN DOCUMENT //
+	 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+    <!DOCTYPE HTML>
+    <html>
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <title>AVIA: Template</title>
+    
+<!-- MOBILE-SPECIFIC METAS ============================
+	 ================================================== --> 
+     
+     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+     <meta name="apple-mobile-web-app-capable" content="yes">
+     <meta name="apple-mobile-web-app-status-bar-style" content="black">
+     
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ///////////////////////////////////////////////////////////////////////////////////////// #BEGIN INCLUDES //
+	 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+ 
+<!-- CSS INCLUDES =====================================
+	 ================================================== -->
+	
+	<link type="text/css" rel="stylesheet" href="css/customer.css" >
+	<link type="text/css" rel="stylesheet" href="css/general.css" >
+	<link type="text/css" rel="stylesheet" href="css/scrollbar.css">
+	<link type="text/css" rel="stylesheet" href="css/buttons.css">
+	<link type="text/css" rel="stylesheet" href="css/elements.css"/>
+
+<!-- JS INCLUDES ======================================
+	 ================================================== -->
+ 
+	<script src="js/jquery-1.7.1.min.js"></script>
+	<script src="js/smart.js"></script> 
+	<script src="js/jquery.pageSetup.js"></script>
+	<script src="js/menu.js"></script> 
+	<script src="js/overthrow.js"></script>
+	<script src="js/pageSwitch.js"></script>
+	<script src="js/jquery.listItems.js"></script>
+	<script src="js/jquery.quicksearch.js"></script>
+     
+<!-- SCRIPT INCLUDES ==================================
+	 ================================================== -->
+	
+	<script type="text/javascript">
+function pageInit(){
+	$('#assignment_list').listItems({
+		collection:'assignments',
+		tag:'sales',
+		template:'#assignment_item_tmpl'
+	})
+
+}
+
+/*   BEGIN DOC.READY ==================================
+	 ================================================== */
+	
+	$(document).ready(function(){
+
+/*   PAGE SETUP =======================================
+	 ================================================== */
+		
+	$('body').pageSetup({
+		header			: 'true',		// options: true, false
+		headerHeight	: 100,			// enter a whole number
+		
+		footer			: 'true',		// options: true, false
+		footerHeight	: 10,			// enter a whole number
+		
+		menu			: 'true',		// options: true, false
+		menuPosition	: 'left',		// options: top, right, bottom, left
+		menuStyle		: 'overlay',	// options: push, overlay
+		menuOnLoad		: 'hide',		// options: show, hide
+		menuHeight		: 100,			// will only be applied to a menu positioned to the top or bottom
+		menuWidth		: 250,			// will only be applied to a menu positioned to the left or right
+		
+		retractSpeed	: 150,			// millisecond value for hiding menu
+		expandSpeed		: 200,			// millisecond value for showing menu
+	});
+	
+/*   SMART SETUP ======================================
+	 ================================================== */
+	
+	$('body').smartSetup({
+		dataTypes: ['assignments', 'library', 'messages', 'games'],
+	});
+
+	
+/*   WEINRE DEBUG CONNECTION ==========================
+	 ================================================== */ 
+	
+	// To use, add ' data-role="debug" ' to your link 
+	$('body').on('click', '[data-role="debug"]', function(){ 
+	 
+		var ip = prompt('Enter your IP Address here'); 
+		 
+		$('<script/>').attr({ 
+			src:'http://'+ip+':8080/target/target-script-min.js', 
+			type: 'text/javascript' 
+		}).appendTo('body'); 
+		 
+	}); 
+
+/*   END DOC.READY ====================================
+	 ================================================== */
+	 	   
+	});
+	
+	</script>
+	
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     /////////////////////////////////////////////////////////////////////////////////////////// #END INCLUDES //
+	 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->  
+  
+    </head>
+    
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     //////////////////////////////////////////////////////////////////////////////////// #BEGIN DOCUMENT BODY //
+	 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	 
+    <body class="white_noise">
+    
+<!-- SECTION: HEADER ==================================
+	 ================================================== -->
+	
+	<!-- Outer Wrapper : Full Width -->
+	<div id="section-header">
+
+		<img src="customer_img/branding/avai_primary.png" width="135" style="position:absolute; display: inline-block; top: 12px; left:50px;" data-role="nav" data-pane="1" data-page="1">
+		
+		<div class="header_inner_shadow" style="position: relative; top: 79px; height:21px; width:100%;"></div>
+		
+		<div style="position: relative; float:right; right: 25px; top: 13px;">
+		<center>
+		<a href="cellcast://action/sync" class="button menu_button" style="margin-right: 15px;"><i class="icon-black icon-refresh icon-position"></i></a>
+		<a href="#" class="button menu_button toggle"><i class="icon-black icon-list icon-position"></i></a>
+		</center>
+		</div>
+		
+	</div>
+	
+<!-- SECTION: DISPLAY AREA ============================
+	 ================================================== --> 
+    
+    <div id="section-display-area" class="overthrow"> 
+	<div id="section-display-area-scroller"> 
+    
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     /////////////////////////////////////////////////////////////////////////////////////////// #BEGIN PANE 1 //
+	 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	 
+	<div data-role="pane" data-pane="1" style="display:block;" data-title="HOME">
+	<div data-role="pages">
+	
+<!-- P1: P1 ===========================================
+	 ================================================== -->
+	 
+	<div data-role="page" data-page="1" style="display:block;">
+	 
+		<div class="super-container full-width">
+		<div class="container">
+		
+		<!-- Content List -->
+		<div class="sixteen columns content" style="position: relative; top:32px;">
+			<div class="row">
+			
+				<div class="onecol"></div>
+				
+				<a class="toggle">
+				<div class="fivecol col_container ">
+					<div class="btn_container bg_aviablue">
+						<center>
+						<span class="btn_greet">Hello</span><br>
+						<span class="btn_name">Robert Gadd</span>
+						</center>
+					</div>
+				</div>
+			</a>
+				
+				<a href="#" data-role="nav" data-pane="3" data-page="1">
+				<div class="fivecol col_container">
+					<div class="btn_container bg_aviablue messages_btn">
+						<center>
+						<span class="btn_number">6</span><br>
+						<span class="btn_title">ANNOUNCEMENTS</span>
+						</center>
+					</div>
+				</div>
+				</a>
+
+				<div class="onecol last"></div>
+				
+			</div>
+			
+			<div class="row">
+						
+				<div class="onecol"></div>
+				
+				<a href="#" data-role="nav" data-pane="2" data-page="1">
+				<div class="fivecol col_container">
+					<div class="btn_container bg_aviablue assignments_btn">
+						<center>
+						<span class="btn_number">21</span><br>
+						<span class="btn_title">ASSIGNMENTS</span>
+						</center>
+					</div>
+				</div>
+				</a>
+				
+				<a href="#" data-role="nav" data-pane="4" data-page="1">
+				<div class="fivecol col_container">
+					<div class="btn_container bg_aviablue games_btn">
+						<center>
+						<span class="btn_number">3</span><br>
+						<span class="btn_title">GAMES</span>
+						</center>
+					</div>
+				</div>
+				</a>
+	
+				<div class="onecol last"></div>
+				
+			</div>
+			
+		</div> <!-- /columns -->
+		
+		</div> <!-- /super-container -->
+		</div> <!-- /container -->
+	
+	</div> <!-- /page1 -->
+	
+	</div> <!-- /pages -->
+	</div> <!-- /pane1 --> 
+	
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     /////////////////////////////////////////////////////////////////////////////////////////// #BEGIN PANE 2 //
+	 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	 
+	<div data-role="pane" data-pane="2" data-title="Assignments">
+	<div data-role="pages">
+	
+<!-- P2: P1 ===========================================
+	 ================================================== -->
+	 
+	<div data-role="page" data-page="1" style="display:block;">
+	 
+		<div class="super-container full-width">
+		<div class="container">
+				
+		<!-- Content List -->
+		<br>
+		<div class="row">
+			
+			<div class="onecol"></div>
+		
+			<div class="tencol">
+				<h5 class="list-title"><span>ASSIGNMENTS</span></h5>
+			</div>
+			
+			<div class="onecol last"></div>
+			
+		</div> <!-- /row -->
+		
+		<div class="row">
+		
+			<div class="onecol"></div>
+			
+			<div class="tencol">
+				
+				<div class="list_container">
+				<ul id="assignment_list" class="list">
+				
+					<li data-role="nav" data-pane="2" data-page="1">
+					Reporting Adverse Events and Product Complaints<br>
+					<span class="details">DURATION: 5MIN &nbsp; TYPE: VIDEO</span>
+					</li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Promotional Interactions &amp; Communications w/ HCP's<br>
+					<span class="details">DURATION: 5MIN &nbsp; TYPE: VIDEO</span></li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Samples and Vouchers<br>
+					<span class="details">DURATION: 5MIN &nbsp; TYPE: VIDEO</span></li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Speaker Programs, Presentations and Other Programs<br>
+					<span class="details">DURATION: 5MIN &nbsp; TYPE: VIDEO</span></li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Exhibits and Conferences<br>
+					<span class="details">DURATION: 5MIN &nbsp; TYPE: VIDEO</span></li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Consumer and Other Non-HCP Interactions<br>
+					<span class="details">DURATION: 5MIN &nbsp; TYPE: VIDEO</span></li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Internal Business Communications<br>
+					<span class="details">DURATION: 5MIN &nbsp; TYPE: VIDEO</span></li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					State-Specific Documents<br>
+					<span class="details">DURATION: 5MIN &nbsp; TYPE: VIDEO</span></li>
+					
+				</ul>
+				</div>
+				
+			</div>
+			
+			<div class="onecol last"></div>
+		
+		</div> <!-- /row -->
+						
+		</div> <!-- /super-container -->
+		</div> <!-- /container -->
+	
+	</div> <!-- /page1 -->
+	
+	</div> <!-- /pages -->
+	</div> <!-- /pane2 -->
+	
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     /////////////////////////////////////////////////////////////////////////////////////////// #BEGIN PANE 3 //
+	 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	 
+	<div data-role="pane" data-pane="3" data-title="Announcements">
+	<div data-role="pages">
+	
+<!-- P3: P1 ===========================================
+	 ================================================== -->
+	 
+	<div data-role="page" data-page="1" style="display:block;">
+	 
+		<div class="super-container full-width">
+		<div class="container">
+				
+		<!-- Content List -->
+		<br>
+		<div class="row">
+			
+			<div class="onecol"></div>
+		
+			<div class="tencol">
+				<h5 class="list-title"><span>ANNOUNCEMENTS</span></h5>
+			</div>
+			
+			<div class="onecol last"></div>
+			
+		</div> <!-- /row -->
+		
+		<div class="row">
+		
+			<div class="onecol"></div>
+			
+			<div class="tencol">
+				
+				<div class="list_container">
+				<ul class="list">
+				
+					<li data-role="nav" data-pane="2" data-page="1">
+					June 21st Staff Meeting - Everyone invited!<br>
+					</li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Don't forget - July 18th is the last day for open-enrollment!<br>
+					</li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Sample Announcement #3<br>
+					</li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Sample Announcement #4<br>
+					</li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Sample Announcement #5<br>
+					</li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Sample Announcement #6<br>
+					</li>
+					
+				</ul>
+				</div>
+				
+			</div>
+			
+			<div class="onecol last"></div>
+		
+		</div> <!-- /row -->
+						
+		</div> <!-- /super-container -->
+		</div> <!-- /container -->
+	
+	</div> <!-- /page1 -->
+	
+	</div> <!-- /pages -->
+	</div> <!-- /pane3 -->
+	
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     /////////////////////////////////////////////////////////////////////////////////////////// #BEGIN PANE 4 //
+	 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+	 
+	<div data-role="pane" data-pane="4" data-title="Games">
+	<div data-role="pages">
+	
+<!-- P4: P1 ===========================================
+	 ================================================== -->
+	 
+	<div data-role="page" data-page="1" style="display:block;">
+	 
+		<div class="super-container full-width">
+		<div class="container">
+				
+		<!-- Content List -->
+		<br>
+		<div class="row">
+			
+			<div class="onecol"></div>
+		
+			<div class="tencol">
+				<h5 class="list-title"><span>GAME PROFILES</span></h5>
+			</div>
+			
+			<div class="onecol last"></div>
+			
+		</div> <!-- /row -->
+		
+		<div class="row">
+		
+			<div class="onecol"></div>
+			
+			<div class="tencol" style="height:100px">
+				
+				<div class="user_profile_container bg_aviablue">
+					<div class="profile_image"><img src="customer_img/misc/rob_avatar.png"></div>
+					<div class="user_name">Robert Gadd</div>
+					<!--
+					<div class="user_level">Level 4</div>
+					<div class="lifetime_points">Lifetime Points Earned: 920pts</div>
+					-->
+				</div>
+				
+			</div>
+			
+			<div class="onecol last"></div>
+		
+		</div> <!-- /row -->
+		
+		
+		</div> <!-- /row -->
+		
+		<br><br>
+		
+		<div class="row">
+		
+			<div class="onecol"></div>
+			
+			<div class="tencol">
+				
+				<div class="list_container">
+				<ul class="list">
+				
+					<li data-role="nav" data-pane="2" data-page="1">
+					The Human Genome<br>
+					</li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Basketball &amp; Fundamentals<br>
+					</li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Punching Sharks<br>
+					</li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Circuits of Doom<br>
+					</li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Leveling Up!<br>
+					</li>
+					
+					<li data-role="nav" data-pane="2" data-page="1">
+					Holding Your Breath for 15 Minutes<br>
+					</li>
+					
+				</ul>
+				</div>
+				
+			</div> <!-- /tencol -->
+			
+		</div> <!-- /row -->
+						
+		</div> <!-- /super-container -->
+		</div> <!-- /container -->
+	
+	</div> <!-- /page1 -->
+	
+	</div> <!-- /pages -->
+	</div> <!-- /pane3 -->
+     
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     /////////////////////////////////////////////////////////////////////////////////////// #END DISPLAY AREA //
+	 //////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+        
+    </div> <!-- END CONTENT -->    
+  	</div> <!-- END CONTAINER --> 
+  	
+<!-- SECTION: NAVIGATION MENU =========================
+	 ================================================== --> 
+	 
+	<div id="section-menu" class="dark_denim">
+	<div id="section-menu-scroller">
+	
+		<div id="wrapper-250"> 
+		
+			<ul class="menu">
+			
+				<li id="zero" style="height:33px;">
+				</li>
+		    	
+		    	<li id="one" style="border-bottom:1px solid white;"> 
+					<a href="#" data-role="nav" data-pane="1" data-page="1"><em><i class="icon-white icon-home icon-position"></i></em>HOME</a> 
+				</li> 
+		        
+				<li id="two" style="border-bottom:1px solid white;"> 
+					<a href="#"><em><i class="icon-white icon-star icon-position"></i></em>ASSIGNMENTS</a> 
+					<ul class="sub-menu">				 
+						<li class="sub-heading">REQUIRED ASSIGNMENTS</li> 
+						<li class="sub-item" style="border-bottom: 1px solid #3d3d3d;"><a href="#" data-role="nav" data-pane="2" data-page="1"><em><i class="icon-white icon-pencil icon-position"></i></em>Assignments<span>8</span></a></li> 
+	                	<li class="sub-item"><a href="#page3" data-role="nav"><em><i class="icon-white icon-book icon-position"></i></em>Learning Paths<span>0</span></a></li> 
+	                	<li class="sub-heading">OPTIONAL ASSIGNMENTS</li> 
+	                	<li class="sub-item"><a href="#page4" data-role="nav"><em><i class="icon-white icon-pencil icon-position"></i></em>Assignments<span>0</span></a></li> 
+					</ul> 
+				</li> 
+					 
+				<li id="three" style="border-bottom:1px solid white;"> 
+					<a href="#"><em><i class="icon-white icon-inbox icon-position"></i></em>MESSAGES</a> 
+					<ul class="sub-menu">				 
+						<li class="sub-item" style="border-bottom: 1px solid #3d3d3d;"><a href="#" data-role="nav" data-pane="3" data-page="1"><em><i class="icon-white icon-exclamation-sign icon-position"></i></em>Announcements<span>6</span></a></li> 
+						<li class="sub-item"><a href="cellcast://menu/notifications"><em><i class="icon-white icon-envelope icon-position"></i></em>Notifications<span>0</span></a></li> 
+					</ul> 
+				</li> 
+		            
+				<li id="four" style="border-bottom:1px solid white;"> 
+					<a href="#"><em><i class="icon-white icon-search icon-position"></i></em>SEARCH</a> 
+					<ul class="sub-menu">				 
+						<li class="sub-item"><a href="cellcast://menu/search"><em><i class="icon-white icon-search icon-position"></i></em>Search Library</a></li> 
+					</ul> 
+				</li> 
+					 
+				<li id="five" style="border-bottom:1px solid white;"> 
+				<a href="#"><em><i class="icon-white icon-user icon-position"></i></em>MY NETWORKS</a> 
+					<ul class="sub-menu">				 
+						<li class="sub-item" style="border-bottom: 1px solid #3d3d3d;"><a href="cellcast://menu/blogs"><em><i class="icon-white icon-comment icon-position"></i></em>Blogs</a></li> 
+	                	<li class="sub-item"><a href="cellcast://menu/forums"><em><i class="icon-white icon-list icon-position"></i></em>Forums</a></li> 
+					</ul> 
+				</li> 
+		            
+				<li id="six" style="border-bottom:1px solid white;"> 
+				<a href="#"><em><i class="icon-white icon-picture icon-position"></i></em>MY MEDIA</a> 
+					<ul class="sub-menu">				 
+						<li class="sub-item" style="border-bottom: 1px solid #3d3d3d;"><a href="cellcast://menu/images"><em><i class="icon-white icon-camera icon-position"></i></em>Take a Picture</a></li> 
+	            		<li class="sub-item" style="border-bottom: 1px solid #3d3d3d;"><a href="cellcast://menu/video"><em><i class="icon-white icon-facetime-video icon-position"></i></em>Record Video</a></li> 
+	            		<li class="sub-item" style="border-bottom: 1px solid #3d3d3d;"><a href="cellcast://menu/audio"><em><i class="icon-white icon-music icon-position"></i></em>Record Audio</a></li> 
+	                	<li class="sub-item"><a href="cellcast://menu/uploadhistory"><em><i class="icon-white icon-retweet icon-position"></i></em>Upload History</a></li> 
+					</ul> 
+				</li>
+				
+				<li id="nine" style="border-bottom:1px solid white;"> 
+				<a href="#"><em><i class="icon-white icon-flag icon-position"></i></em>GAMIFICATION</a> 
+					<ul class="sub-menu">				 
+						<li class="sub-item" style="border-bottom: 1px solid #3d3d3d;"><a href="#" data-role="nav" data-pane="4" data-page="1"><em><i class="icon-white icon-bookmark icon-position"></i></em>Game Profiles</a></li> 
+					</ul> 
+				</li>
+		            
+				<li id="seven" style="border-bottom:1px solid white;"> 
+				<a href="#"><em><i class="icon-white icon-adjust icon-position"></i></em>STATUS</a> 
+					<ul class="sub-menu">				 
+						<li class="sub-item" style="border-bottom: 1px solid #3d3d3d;"><a href="cellcast://menu/mystatus"><em><i class="icon-white icon-list-alt icon-position"></i></em>My Status</a></li> 
+	                	<li class="sub-item" style="border-bottom: 1px solid #3d3d3d;"><a href="cellcast://menu/devicestatus"><em><i class="icon-white icon-list-alt icon-position"></i></em>Device Status</a></li> 
+	                	<li class="sub-item" style="border-bottom: 1px solid #3d3d3d;"><a href="cellcast://menu/downloadutility"><em><i class="icon-white icon-download-alt icon-position"></i></em>Download Utility</a></li> 
+	                	<li class="sub-item"><a href="cellcast://menu/about"><em><i class="icon-white icon-info-sign icon-position"></i></em>About</a></li> 
+					</ul> 
+				</li>
+				
+				<li id="eight"> 
+				<a href="cellcast://menu/settings"><em><i class="icon-white icon-cog icon-position"></i></em>SETTINGS</a> 
+				</li>
+				 
+			</ul> <!-- /menu list -->
+				 
+		</div> <!-- /wrapper-250 -->
+		
+	</div> <!-- /menu scroller -->
+	</div> <!-- /menu container -->
+
+<!-- SECTION: FOOTER ==================================
+	 ================================================== --> 
+      
+	<div id="section-footer" class="classy_fabric"> 
+	</div> 
+	
+<!-- SECTION: TEMPLATES ===============================
+	 ================================================== -->
+  
+	<div id="templates" style="display:none;">
+  	
+	<div id="catalog_item_tmpl">
+		<li data-role="nav">
+			<span data-tmpl="title"></span>
+				<div class="label">
+				<a href="#" data-tmpl="action">
+				<span data-tmpl="actionTitle"></span>
+				</a>
+				</div>
+			<span class="hidden" data-tmpl="metatags"></span>
+		</li>
+	</div>
+	
+	</div> <!-- /templates -->
+  
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     ////////////////////////////////////////////////////////////////////////////////////// #END DOCUMENT BODY //
+	 //////////////////////////////////////////////////////////////////////////////////////////////////////////// --> 
+     
+    </body> 
+    </html> 

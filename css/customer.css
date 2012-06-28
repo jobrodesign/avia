@@ -1,0 +1,302 @@
+
+/*  ALL CUSTOMER SPECIFIC STYLES 
+	SHOULD BE INCLUDED IN THIS FILE ONLY
+    ------------------------------------- */
+
+/* =======================================================
+   TABLE OF CONTENTS
+   ======================================================= */
+   
+/* =======================================================
+   #CUSTOMER STYLES : PATTERNS
+   ======================================================= */
+   
+	.ciq_grad_repeat		{ background: url(../customer_img/patterns/ciq_grad_repeat.png) repeat-x; }
+	.header_inner_shadow	{ background: url(../customer_img/patterns/header_inner_shadow.png) repeat-x; }
+	
+/* =======================================================
+   #CUSTOMER STYLES : SECTION MENU
+   ======================================================= */
+	
+  /* Menu Layout  */
+	
+	.menu,
+	.menu ul,
+	.menu li,
+	.menu a,
+	.menu span {
+		margin: 0;
+		padding: 0;
+		border: none;
+		outline: none;
+		list-style: none;
+		}
+	
+	.menu li > a {
+		display: block;
+		position: relative;
+		min-width: 110px;
+		padding: 3px 0 0 40px;
+		height: 39px;
+		color: #fdfdfd;
+		font: bold 12px/34px Arial, sans-serif;
+		text-decoration: none;
+		}
+	
+	.menu > li:hover > a,
+	.menu > li:target > a,
+	.menu > li > a.active {
+		border-right: 9px solid #f89331;
+		}
+
+  /* Menu Item Label  */
+
+	.menu li > a span {
+		display: block;
+		position: absolute;
+		top: 7px;
+		right: 0;
+		padding: 0px 10px;
+		margin-right: 10px;
+		font: normal bold 12px/18px Arial, sans-serif;
+		background: #404247;
+		-webkit-border-radius: 15px;
+		-moz-border-radius: 15px;
+		border-radius: 15px;
+		}
+	
+  /* Menu Item Icon  */
+	
+	.menu > li > a:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: '';
+		width: 24px;
+		height: 24px;
+		margin: 4px 8px;
+		background-repeat: no-repeat;
+		background-position: 0px 0px;
+		}
+	
+	.menu em {
+		position: absolute;
+		float:left;
+		top: 2px;
+		left: 0;
+		margin-left: 14px;
+		color: #a6a6a6;
+		font: normal 10px/32px Arial, sans-serif;
+		}
+	
+  /* Sub-Menu Item  */
+	
+	li.sub-item > a {
+		height:100% !important;
+		background: url(../base_img/patterns/darkerdenim.png) repeat;
+		color: #fdfdfd;
+		font: bold 12px/34px Arial, sans-serif;
+		text-decoration: none;
+		}
+		
+	li.sub-item:first-child > a {
+		border-top: 0px !important;
+		border-bottom: 0px !important;
+		}
+		
+	li.sub-item:last-child > a {
+		border-top: 0px !important;
+		border-bottom: 0px !important;
+		}
+	
+	.two-line { font: normal bold 12px/16px Arial, sans-serif !important;
+				padding:8px 0px 8px 41px !important; }
+					
+	.two-line em { top:20% !important; }
+	
+	.three-line { font: normal bold 12px/16px Arial, sans-serif !important;
+				  padding:8px 0px 8px 41px !important; }
+					
+	.three-line em { top:30% !important; }
+	
+	li.sub-item:last-child > a { border-bottom: 1px solid #c9c9c9; }
+	
+  /* Sub-Menu Item Label  */
+
+	.sub-item em {
+		position: absolute;
+		top: 1px;
+		left: 0;
+		margin-left: 14px;
+		color: #a6a6a6;
+		font: normal 10px/32px Arial, sans-serif;
+		}
+		
+	.sub-item span {
+		position: absolute;
+		top: 8px !important;
+		padding-top: 2px !important;
+		}
+	
+  /* Functionality  */
+	
+	.menu li > .sub-menu { display: none; }
+	
+	.menu li:target > .sub-menu { display: block; }
+	
+  /* Sub-Headings  */
+	
+	.sub-heading {
+		height:33px !important;
+		padding:0px !important;
+		}
+
+	li.sub-heading { 
+		position:relative;
+		padding:0 0 0 14px !important;
+		background: url(../base_img/patterns/darkerdenim.png) repeat;
+		color: #fdfdfd;
+		font: bold 12px/34px Arial, sans-serif;
+		text-decoration: none;
+		text-shadow: 0px 1px 0px rgba(0,0,0, .35);
+		border-top: 1px solid #3d3d3d;
+		border-bottom: 1px solid #3d3d3d;
+		}
+		
+	.messages_btn		{ background: url(../customer_img/misc/messages_btn_icon.png) no-repeat top left; }
+	.games_btn			{ background: url(../customer_img/misc/games_btn_icon.png) no-repeat top left; }
+	.assignments_btn	{ background: url(../customer_img/misc/assignments_btn_icon.png) no-repeat top left; }
+						  
+	.menu_close	{
+		position: relative;
+		float: right;
+		display: block;
+		top: 15px;
+		right: 15px;
+		}
+		
+	.col_container {
+		height: 275px;
+		}
+		
+	.btn_container{
+		height: 250px;
+		-moz-box-shadow: 7px 7px 5px #b6b6b6;
+		-webkit-box-shadow: 7px 7px 5px #b6b6b6;
+		box-shadow: 7px 7px 5px #b6b6b6;
+		}
+		
+	.btn_number{
+		position: relative;
+		top: 85px;
+		font-family: arial, helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 140px;
+		color: white;
+		}
+		
+	.btn_title{
+		position: relative;
+		top: 135px;
+		font-family: arial, helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+		color: white;
+		}
+		
+	.btn_greet{
+		position: relative;
+		top: 108px;
+		font-family: arial, helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 80px;
+		color: white;
+		}
+		
+	.btn_name{
+		position: relative;
+		top: 155px;
+		font-family: arial, helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 25px;
+		color: white;
+		}
+		
+	.user_profile_container {
+		position: relative;
+		display: block;
+		padding: 15px;
+		-moz-box-shadow: 7px 7px 5px #b6b6b6;
+		-webkit-box-shadow: 7px 7px 5px #b6b6b6;
+		box-shadow: 7px 7px 5px #b6b6b6;
+		}
+		
+	.profile_image {
+		position: relative;
+		display: inline-block;
+		border: 4px solid #FFF;
+		height: 58px;
+		vertical-align: middle;
+		}
+		
+	.user_name {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		font-family: arial, helvetica, sans-serif;
+		font-weight: bold;
+		font-size: 40px;
+		color: white;
+		margin-left: 20px;
+		}
+		
+	.user_level {
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		}
+		
+	.lifetime_points{
+		position: relative;
+		display: inline-block;
+		vertical-align: middle;
+		}
+		
+	@media handheld, only screen and (max-width: 768px){
+		
+		.col_container{ height: 125px; }
+	
+		.btn_container{ height: 100px; }
+		
+		.btn_number{
+			top: 25px;
+			right: 20px;
+			font-size: 60px;
+			color: white;
+			float: right;
+			}
+			
+		.btn_title{
+			top: 50px;
+			right: 22px;
+			font-size: 20px;
+			float: right;
+			}
+			
+		.btn_greet{
+			top: 25px;
+			right: 20px;
+			font-size: 60px;
+			color: white;
+			float: right;
+			}
+			
+		.btn_name{
+			top: 50px;
+			right: 22px;
+			font-size: 25px;
+			color: white;
+			float: right;
+			}
+	}
+

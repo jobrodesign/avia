@@ -1,0 +1,251 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"lo",
+				"location"
+			],
+			[
+				"assignment",
+				"assignment_list"
+			],
+			[
+				"jshint",
+				"jshint-output"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 22844,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/JSHint/JSHint.sublime-build",
+	"command_palette":
+	{
+		"height": 392.0,
+		"selected_items":
+		[
+			[
+				"git",
+				"Git: Gui"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"discv",
+				"Package Control: Discover Packages"
+			],
+			[
+				"list pa",
+				"Package Control: List Packages"
+			],
+			[
+				"discov",
+				"Package Control: Discover Packages"
+			],
+			[
+				"disc",
+				"Package Control: Discover Packages"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 235.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/Users/jobrodesign/workspace/avia/js/jquery.listItems.js",
+		"/C/Users/jobrodesign/AppData/Roaming/Sublime Text 2/Packages/Git/Git.sublime-settings",
+		"/C/Users/jobrodesign/workspace/avia/index.html",
+		"/C/Users/jobrodesign/workspace/avia/js/jquery.smart.js",
+		"/C/Users/jobrodesign/workspace/avia/js/jshint-output.txt",
+		"/C/Users/Josh/Desktop/jquerymobile.js",
+		"/C/Users/Josh/Documents/MyAviaProject/js/jquery.pageSetup.js",
+		"/C/Users/Josh/Documents/MyAviaProject/css/base.css",
+		"/C/Users/Josh/Documents/MyAviaProject/js/overthrow.js",
+		"/C/Users/Josh/Documents/MyAviaProject/js/smart.js",
+		"/C/Users/Josh/AppData/Roaming/Sublime Text 2/Packages/STProjectMaker/Templates/Avia/js/smart.js",
+		"/C/Users/Josh/AppData/Roaming/Sublime Text 2/Packages/JSHint/JSHint.sublime-build",
+		"/C/Users/Josh/Documents/MyAviaProject/js/jshint-output.txt",
+		"/C/Users/Josh/Documents/MyAviaProject/jshint-output.txt",
+		"/C/Users/Josh/Documents/MyAviaProject$file_path/jshint-output.txt",
+		"/C/Users/Josh/AppData/Roaming/Sublime Text 2/Packages/Makefile/Make.sublime-build",
+		"/C/Users/Josh/AppData/Roaming/Sublime Text 2/Packages/JSHint/JSHint.py",
+		"/C/Users/Josh/Documents/MyAviaProject/js/temp.txt",
+		"/C/Users/Josh/Documents/MyAviaProject/js/iscroll.js",
+		"/C/Users/Josh/Documents/MyAviaProject/js/jquery-1.7.1.min.js",
+		"/C/Users/Josh/AppData/Roaming/Sublime Text 2/Packages/User/Default (Windows).sublime-keymap",
+		"/C/Users/Josh/workspace/CellCastDesktop/desktop_app/js/temp.txt",
+		"/C/Users/Josh/workspace/CellCastDesktop/desktop_app/js/smart.js",
+		"/C/Users/Josh/Desktop/sttest.js",
+		"/C/Users/Josh/Desktop/sublime_test.html",
+		"/C/Users/Josh/AppData/Roaming/Sublime Text 2/Packages/HTML/HTML.tmLanguage",
+		"/C/Users/Josh/Desktop/sttest",
+		"/C/Users/Josh/AppData/Roaming/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/C/Users/Josh/AppData/Roaming/Sublime Text 2/Packages/User/Plain text.sublime-settings",
+		"/C/Users/Josh/AppData/Roaming/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"color"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"settings":
+					{
+						"buffer_size": 22844,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2220,
+								2220
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 34.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
+	"output.git":
+	{
+		"height": 100.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"ssjs",
+				"/C/Users/Josh/Desktop/sublime_test"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 213.0,
+	"status_bar_visible": true
+}
